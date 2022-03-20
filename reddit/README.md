@@ -63,6 +63,7 @@ It takes 1-2 positional arguments as such:
 python reddit_scrape.py [SUBREDDIT] [LIMIT]
 ```
 
-[SUBREDDIT] : The subreddit to scrape comments from
-[LIMIT] : The number of comments to scrape. If omitted, the script will attempt to scrape all comments.
+**[SUBREDDIT]** : The subreddit to scrape comments from
+
+**[LIMIT]** : The number of comments to scrape. If omitted, the script will attempt to scrape all comments.
 
