@@ -16,7 +16,7 @@ Install the reddit API wrapper praw with:
 pip install praw
 ```
 
-Or, if you want to install praw for you conda environment use:
+Or, if you want to install praw for conda environment use:
 
 ```
 conda install -c conda-forge praw
@@ -24,13 +24,12 @@ conda install -c conda-forge praw
 
 ### pandas
 
-Install pandas with:
+pandas comes preinstalled with anaconda.
+Alterantively, you can install pandas with:
 
 ```
 pip install pandas
 ```
-
-Alternatively, pandas comes preinstalled with anaconda.
 
 ---
 
