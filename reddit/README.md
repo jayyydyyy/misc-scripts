@@ -8,19 +8,21 @@ This is a small and simple script for reddit comment scraping!
 
 To use this script you will need multiple dependencies:
 
-### PRAW
+### PMAW
 
-Install the reddit API wrapper praw with:
-
-```
-pip install praw
-```
-
-Or, if you want to install praw for conda environment use:
+Install the pushshift API wrapper pmaw with:
 
 ```
-conda install -c conda-forge praw
+pip install pmaw
 ```
+
+Or, if you want to install pmaw for conda environment use:
+
+```
+conda install -c conda-forge pmaw
+```
+
+This should install the reddit api wrapper, praw, for you as well
 
 ### pandas
 
@@ -56,13 +58,17 @@ Please consult the official documentation for PRAW for more information:
 
 This script was designed to be ran from the command line.
 
-It takes 1-2 positional arguments as such:
+It takes 1-2 positional arguments and 2 optional arguments as such:
 
 ```
-python reddit_scrape.py [SUBREDDIT] [LIMIT]
+python reddit_scrape.py [SUBREDDIT...] [LIMIT] (-p) (-st yyyy-mm-dd)
 ```
 
-**[SUBREDDIT]** : The subreddit to scrape comments from
+**[SUBREDDIT]** : The subreddits to scrape comments from
 
-**[LIMIT]** : The number of comments to scrape. If omitted, the script will attempt to scrape all comments.
+**[LIMIT]** : The number of comments to scrape. If 0, the script will attempt to scrape all comments.
+
+**(\-p)** : If this flag is present, the pushshift api will be used instead of the official reddit api
+
+**(\-st yyyy-mm-dd)** : If this flag is present, the pushshift api will start scraping after the specified start time. MUST BE IN yyy-mm-dd format! Does nothing if pushshift is not enabled.
 
