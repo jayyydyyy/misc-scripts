@@ -58,7 +58,7 @@ Please consult the official documentation for PRAW for more information:
 
 This script was designed to be ran from the command line.
 
-It takes 1-2 positional arguments and 2 optional arguments as such:
+It takes 2 positional arguments and 2 optional arguments as such:
 
 ```
 python reddit_scrape.py [SUBREDDIT...] [LIMIT] (-p) (-st yyyy-mm-dd)
